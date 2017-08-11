@@ -1,0 +1,14 @@
+.content{overflow: hidden; width: 690rpx;background: #fff; margin: 0 0rpx 30rpx 30rpx;margin-top:50rpx;  padding-bottom: 20rpx; border-radius: 10rpx;border: 1rpx solid #E3E3E3;  box-shadow: 10rpx 10rpx 20rpx #888;}
+.content_top{}
+.userinfo-avatar {width: 60rpx; height: 60rpx; margin: 20rpx; border-radius: 50%;vertical-align:middle;}
+.content_text{font-size: 24rpx;display: inline-block;vertical-align:middle;}
+.content_name{line-height: 24rpx;display: inline-block}
+.content_img{width: 650rpx; height: 370rpx; border-radius: 15rpx;margin: 0 20rpx;}
+.content_details{margin: 0 20rpx; width: 650rpx;font-size:35rpx;color: #888;line-height: 40rpx;}
+.icon{width: 45rpx;height: 46rpx;vertical-align:middle;padding: 8rpx;}
+.icons{width: 49rpx;height: 50rpx;padding: 8rpx;background: url(../../image/share.png)no-repeat; border: solid white 2rpx; background-size:47rpx 48rpx;}
+.content_btm{margin: 20rpx 25rpx 10rpx 20rpx;}
+.icon_name{font-size: 26rpx;margin-right: 160rpx;}
+.cut{display: inline-block}
+
+.create{width: 400rpx;margin-top: 100rpx;}
