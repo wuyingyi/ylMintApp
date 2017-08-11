@@ -10,15 +10,17 @@
   </swiper> 
   </view>   
  <view class="classname" wx:for="{{lists}}" wx:for-index="index" wx:key="id">
-  <navigator url="../details/details">
+ 
     <view class="content">
       <view class="content_top">
         <image class="userinfo-avatar"  src="{{userInfo.avatarUrl}}" background-size="cover"></image>
         <text class="content_text">{{item.name}}</text>
           <!-- <text class="content_text">{{item.address}}</text>     -->
       </view>
-      <image src="{{item.imgurl}}" mode="aspectFill" class="content_img"></image>
-      <textarea  disabled="false" value="{{item.content}}" class="content_details"  auto-height="true" />
+      <navigator url="../details/details">
+        <image src="{{item.imgurl}}" mode="aspectFill" class="content_img"></image>
+        <textarea  disabled="false" value="{{item.content}}" class="content_details"  auto-height="true" />
+      </navigator>
       <view class="content_btm">
           <view class="cut" wx:if="{{item.praise==true}}" bindtap="praiseCut" data-index="{{index}}">
             <image src="../../image/likeing.png" class="icon"></image>
@@ -43,7 +45,7 @@
             <text class="icon_name">分享</text>
       </view>
     </view> 
-  </navigator>
+ 
   
  </view>
 

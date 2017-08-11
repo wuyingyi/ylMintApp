@@ -6,7 +6,19 @@
       </view>
       <image src="{{imgurl}}" mode="aspectFill" class="content_img"></image>
       <textarea  disabled="false" value="{{content}}" class="content_details"  auto-height="true" />
-      <view class="content_btm">
+      <view class="classname">
+        <view class="mess" wx:if="{{showAuthor==true}}">
+          <view class="classname">{{author}}</view>
+        </view>
+        <view class="mess" wx:if="{{showTime==true}}">
+          <view class="classname">{{times}}</view>
+        </view>
+        <view class="mess_code" wx:if="{{showCode==true}}">
+           <image src="../../image/code.jpg" class="mess_img"></image>
+        </view>
+       
+      </view>
+      <view class="content_btm" wx:if="{{contentBtm==true}}">
           <view class="cut" wx:if="{{item.praise==true}}" bindtap="praiseCut" data-index="{{index}}">
             <image src="../../image/likeing.png" class="icon"></image>
           </view>
@@ -31,6 +43,48 @@
       </view>
     </view> 
 
-    <view class="classname">
-      <button class="create">生成海报</button>
+    <!-- <view class="select" wx:if="{{contentBtm==false}}">
+      <checkbox-group bindchange="checkboxChange">
+        <label class="checkbox" wx:for="{{items}}">
+          <view >
+             <checkbox class="selecting" value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+          </view>  
+        </label>
+      </checkbox-group>
+    </view> -->
+    <view class="select" wx:if="{{contentBtm==false}}">
+      <checkbox-group bindchange="showName">
+        <label class="checkbox">
+             <checkbox class="selecting" />是否显示签名
+        </label>
+      </checkbox-group>
+        <checkbox-group bindchange="showTime">
+        <label class="checkbox">
+             <checkbox class="selecting" />是否显示时间
+        </label>
+      </checkbox-group>
+        <checkbox-group bindchange="showCode">
+        <label class="checkbox">      
+             <checkbox class="selecting" />是否显示专属二维码
+        </label>
+      </checkbox-group>
+    </view>
+    <view class="classname" wx:if="{{contentBtm==true}}" >
+      <button class="create" bindtap="createNews">生成海报</button>
+    </view>
+
+      <view class="classname" wx:else >
+      <button class="create" bindtap="createNews">保存到手机</button>
+    </view>
+
+    <view class="bottom" wx:if="{{contentBtm==false}}" >
+      <view class="cut bottom_s">
+        <image src="../../image/download.png" class="download"></image>
+      </view>
+      <view class="cut bottom_s">
+        <image src="../../image/copy.png" class="download"></image>
+      </view>
+      <view class="cut bottom_s">
+        <image src="../../image/share1.png"  class="download"></image>
+      </view>
     </view>
