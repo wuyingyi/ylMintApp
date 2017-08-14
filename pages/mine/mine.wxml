@@ -17,8 +17,20 @@
     </view>
   </view>
 
-
-
+  <view class="my_list">
+    <navigator class="my_listItem" url="" hover-class="my_listItemAct">
+      <view class="my_listItem_sub">我的作品</view>
+    </navigator>
+    <navigator class="my_listItem" url="" hover-class="my_listItemAct">
+      <view class="my_listItem_sub">我的收藏</view>
+    </navigator>
+    <navigator class="my_listItem" url="" hover-class="my_listItemAct">
+      <view class="my_listItem_sub">意见反馈</view>
+    </navigator>
+    <navigator class="my_listItem" url="" hover-class="my_listItemAct">
+      <view class="my_listItem_sub">关于我们</view>
+    </navigator>
+  </view>
 
 </view>
 

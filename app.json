@@ -4,7 +4,8 @@
     "pages/logs/logs",
     "pages/type/type",
     "pages/mine/mine",
-    "pages/details/details"
+    "pages/details/details",
+    "pages/publish/publish"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -25,6 +26,12 @@
         "text": "分类",
         "iconPath": "image/nav_agent.png",
         "selectedIconPath": "image/nav_agentAct.png"
+      },
+      {
+        "pagePath": "pages/publish/publish",
+        "text": "发布",
+        "iconPath": "image/publish.png",
+        "selectedIconPath": "image/publishing.png"
       },
       {
         "pagePath": "pages/mine/mine",

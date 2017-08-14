@@ -74,7 +74,7 @@
     </view>
 
       <view class="classname" wx:else >
-      <button class="create" bindtap="createNews">保存到手机</button>
+      <button class="create" bindtap="createNews">保存到相册</button>
     </view>
 
     <view class="bottom" wx:if="{{contentBtm==false}}" >
