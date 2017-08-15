@@ -5,7 +5,11 @@
     "pages/type/type",
     "pages/mine/mine",
     "pages/details/details",
-    "pages/publish/publish"
+    "pages/publish/publish",
+    "pages/aboutUs/aboutUs",
+    "pages/opinion/opinion",
+    "pages/collect/collect",
+    "pages/production/production"
   ],
   "window": {
     "backgroundTextStyle": "light",

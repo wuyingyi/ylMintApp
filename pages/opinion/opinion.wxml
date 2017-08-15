@@ -1,0 +1,44 @@
+<view class="ad_popWrap">
+  <view class="ad_popError" wx:if="{{popErrorMsg}}">{{popErrorMsg}}</view>
+  <view class="ad_popCon">
+    <form bindsubmit="formSubmit" report-submit="true">
+
+      <view class="ad_popFt">
+        <textarea class="ad_popArea" bindinput="commentTxtFn" focus="{{isPopOpen}}" placeholder-style="color:#cccccc;" placeholder="请输入您的意见或建议。" maxlength="1000"name="textarea" value="{{subValue}}"/>
+      </view>
+      <view class="ad_popCout">
+        <text class="one_star">您还可以输入</text>
+        <text class="one_stars {{!!commentTips?'danger':''}}">{{commentTxtCount}}</text>
+        <text class="one_star">字</text>
+      </view>
+
+      <view class="ad_popHd">
+        <view class="pubFItemCon">
+          <text class="pubFItemL">署名:</text>
+          <view class="pubFItemR">
+            <!--<icon type="clear" class="icon_Btn" size="16" bindtap="doReset" />-->
+            <input class="sign_inp" placeholder="请输入您的签名" value="{{inputValue}}" placeholder-style="color:#cccccc;" maxlength="16" bindinput="signTxtFn"  name="inputs" />
+          </view>
+        </view>
+
+      </view>
+      <view class="ad_popCout">
+        <text class="one_star">您还可以输入</text>
+        <text class="one_stars {{!!sigmTips?'danger':''}}">{{signTxt}}</text>
+        <text class="one_star">字</text>
+      </view>
+         <view class="ad_popHd">
+        <view class="pubFItemCon">
+          <text class="pubFItemL">电话:</text>
+          <view class="pubFItemR">
+            <!--<icon type="clear" class="icon_Btn" size="16" bindtap="doReset" />-->
+            <input class="sign_inp" placeholder="请输入您的联系方式(选填)" value="{{inputValue}}" placeholder-style="color:#cccccc;" maxlength="16" bindinput="signTxtFn"  name="inputs" />
+          </view>
+        </view>
+
+      </view>
+      <button class="informBtn" hover-class="informBtnAct" hover  form-type="submit">发布</button>
+    </form>
+
+  </view>
+</view>
