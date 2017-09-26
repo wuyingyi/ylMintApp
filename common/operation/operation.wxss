@@ -1,0 +1,5 @@
+.icon{width: 45rpx;height: 46rpx;vertical-align:middle;padding: 8rpx;}
+.icons{width: 49rpx;height: 50rpx;padding: 8rpx;background: url(../../image/share.png)no-repeat; border: solid white 2rpx; background-size:47rpx 48rpx;}
+.content_btm{margin: 20rpx 25rpx 10rpx 20rpx;}
+.icon_name{font-size: 26rpx;margin-right: 160rpx;}
+.cut{display: inline-block}

@@ -8,7 +8,7 @@ page{background: #fff}
 .my_sex{ width:40rpx; height: 40rpx; position: absolute; right: 0; bottom: 0;}
 .my_sexImg{  width:40rpx; height: 40rpx; border-radius: 50%;}
 .my_name{ display: inline-block; color: #fff;  height: 60rpx; line-height: 60rpx;font-size: 34rpx; font-weight: bold; }
-.my_listItem{ font-size:32rpx; color:#333; height: 130rpx; line-height: 130rpx; margin: 0 20rpx; border-top:1px solid #ebebeb ; margin-top: -1px;}
-.my_listItemAct{ color: #ff6600; background: #EDEDED;}
+.my_listItem{ font-size:28rpx; color:#333; height: 100rpx; line-height: 100rpx; margin: 0 20rpx; border-top:1px solid #ebebeb ; margin-top: -1px;}
+.my_listItemAct{ color: #f64400;}
 .my_listItem_sub{ text-align: center; color: #999; font-size: 24rpx;}
 .my_list{ margin-bottom: 15rpx; background: #fff; overflow: hidden;}

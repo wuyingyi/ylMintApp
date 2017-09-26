@@ -1,3 +1,4 @@
+ <import src="/common/operation/operation.wxml" />
  <view class="content">
       <view class="content_top">
         <image class="userinfo-avatar"  src="{{userInfo.avatarUrl}}" background-size="cover"></image>
@@ -18,40 +19,8 @@
         </view>
        
       </view>
-      <view class="content_btm" wx:if="{{contentBtm==true}}">
-          <view class="cut" wx:if="{{item.praise==true}}" bindtap="praiseCut" data-index="{{index}}">
-            <image src="../../image/likeing.png" class="icon"></image>
-          </view>
-          <view class="cut" wx:else bindtap="praisecutCancel" data-index="{{index}}">
-            <image src="../../image/like.png" class="icon"></image>
-          </view>
-          <text class="icon_name">赞</text>
-
-          <view class="cut" wx:if="{{item.collect==true}}" bindtap="collectCut" data-index="{{index}}">
-            <image src="../../image/collecting.png" class="icon"></image>
-          </view>
-          <view class="cut" wx:else  bindtap="collectCancel" data-index="{{index}}">
-            <image src="../../image/collect.png" class="icon"></image>
-          </view>
-          <text class="icon_name">收藏</text >
-
-          <view class="cut"  bindtap="share">
-            <image src="../../image/share.png" class="icon"></image> 
-            <!-- <button class="icons" open-type="share"></button> -->
-          </view>
-            <text class="icon_name">分享</text>
-      </view>
+      <template is="operation" data="{{item}}"></template>
     </view> 
-
-    <!-- <view class="select" wx:if="{{contentBtm==false}}">
-      <checkbox-group bindchange="checkboxChange">
-        <label class="checkbox" wx:for="{{items}}">
-          <view >
-             <checkbox class="selecting" value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
-          </view>  
-        </label>
-      </checkbox-group>
-    </view> -->
     <view class="select" wx:if="{{contentBtm==false}}">
       <checkbox-group bindchange="showName">
         <label class="checkbox">

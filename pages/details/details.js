@@ -1,4 +1,4 @@
-// details.js
+import { Operation } from '../../common/operation/operation'; 
 var app = getApp()
 Page({
 
@@ -42,6 +42,8 @@ Page({
         // content: content
       })
     })
+    
+    
   },
 
   checkboxChange: function (e) {

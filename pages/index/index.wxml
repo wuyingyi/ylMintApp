@@ -1,4 +1,4 @@
-<!--index.wxml-->
+ <import src="/common/operation/operation.wxml" />
 <view class="container">
    <view class="top">  
    <swiper autoplay="true" interval="5000" duration="1000" circular="true" vertical="true">
@@ -21,29 +21,7 @@
         <image src="{{item.imgurl}}" mode="aspectFill" class="content_img"></image>
         <textarea  disabled="false" value="{{item.content}}" class="content_details"  auto-height="true" />
       </navigator>
-      <view class="content_btm">
-          <view class="cut" wx:if="{{item.praise==true}}" bindtap="praiseCut" data-index="{{index}}">
-            <image src="../../image/likeing.png" class="icon"></image>
-          </view>
-          <view class="cut" wx:else bindtap="praisecutCancel" data-index="{{index}}">
-            <image src="../../image/like.png" class="icon"></image>
-          </view>
-          <text class="icon_name">赞</text>
-
-          <view class="cut" wx:if="{{item.collect==true}}" bindtap="collectCut" data-index="{{index}}">
-            <image src="../../image/collecting.png" class="icon"></image>
-          </view>
-          <view class="cut" wx:else  bindtap="collectCancel" data-index="{{index}}">
-            <image src="../../image/collect.png" class="icon"></image>
-          </view>
-          <text class="icon_name">收藏</text >
-
-          <view class="cut"  bindtap="share">
-            <image src="../../image/share.png" class="icon"></image> 
-            <!-- <button class="icons" open-type="share"></button> -->
-          </view>
-            <text class="icon_name">分享</text>
-      </view>
+      <template is="operation" data="{{item,index,lists}}"></template>
     </view> 
  
   
